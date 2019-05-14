@@ -1,0 +1,38 @@
+body {
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+
+.centered-element {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 50%;
+  margin-top: -50px;
+}
+
+
+.itemsheaderheight {
+    height: -webkit-fill-available
+}
+
+
+.lol{
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.verticallyAlignCenterItems{
+	display: flex;
+	align-items: center;
+}
+
+
+.itemsheight {
+    height: -webkit-fill-available
+}
+
+
