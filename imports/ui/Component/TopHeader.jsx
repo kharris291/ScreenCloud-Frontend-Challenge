@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
-import { Meteor } from 'meteor/meteor'
 import { NavLink } from 'react-router-dom'
 import { Menu } from 'semantic-ui-react'
 
@@ -11,7 +10,6 @@ class TopHeader extends Component {
 
     console.log(props)
     console.log(this.props);
-    this.state=this.props.state;
   }
   
   render() {

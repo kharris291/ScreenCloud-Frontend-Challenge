@@ -1,18 +1,12 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types'
 import { Meteor } from 'meteor/meteor'
-import { withTracker } from 'meteor/react-meteor-data'
-import { withRouter, NavLink } from 'react-router-dom'
-import { Menu, Dropdown } from 'semantic-ui-react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import WithdrawCash from '/imports/ui/pages/WithdrawCash';
 import BankLogin from '/imports/ui/BankLogin';
+import TopHeader from '/imports/ui/Component/TopHeader';
 
 // This is the default semantic css but can be replaced by a customized version
 import 'semantic-ui-css/semantic.css'
-
-// Public components
-import TopHeader from '/imports/ui/Component/TopHeader';
 
 class App extends Component {
 	constructor(props) {
@@ -59,7 +53,6 @@ class App extends Component {
 	}
 
 	updateBalance(value){
-		console.log(value)
 		this.setState({ balance: (value) });
 
 	}
@@ -67,7 +60,6 @@ class App extends Component {
 
 	addInState = (attrs) => {
 		var listAmt = this.state.amountWithdrawn;
-		//ensure that we are an index array
 		var today =new Date();
 		var dd = today.getDate();
 		var mm = today.getMonth() + 1;
